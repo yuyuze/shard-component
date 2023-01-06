@@ -1,13 +1,6 @@
 {
-  "name": "shard",
-  "version": "0.0.1",
-  "files": [
-    "dist",
-    "lib",
-    "es",
-    "scripts",
-    "vetur"
-  ],
+  "name": "tj-shard",
+  "version": "0.0.10",
   "main": "./components/components.ts",
   "keywords": [
     "shard"
@@ -55,7 +48,6 @@
     "acorn": "^8.0.0",
     "ali-oss": "^6.16.0",
     "autoprefixer": "^10.2.0",
-    "axios": "^0.21.1",
     "babel-jest": "^26.1.0",
     "babel-plugin-import": "^1.1.1",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
@@ -83,7 +75,6 @@
     "js-base64": "^3.0.0",
     "json-templater": "^1.2.0",
     "jsonp": "^0.2.1",
-    "less": "^4.0.0",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^8.0.4",
     "markdown-it-container": "^3.0.0",
@@ -107,10 +98,10 @@
     "slash": "^3.0.0",
     "ts-jest": "^26.4.1",
     "typescript": "~4.5.2",
+    "vue": "3.2.31",
     "umi-mock-middleware": "^1.0.0",
     "umi-request": "^1.3.5",
     "vite": "^2.3.8",
-    "vue": "3.2.31",
     "vue-antd-md-loader": "^1.2.1-beta.1",
     "vue-clipboard2": "0.3.3",
     "vue-draggable-resizable": "^2.1.0",
@@ -118,17 +109,18 @@
     "vue-infinite-scroll": "^2.0.2",
     "vue-jest": "^5.0.0-alpha.3",
     "vue-request": "^1.0.2",
-    "vue-router": "^4.0.0",
     "vue-server-renderer": "^2.6.11"
   },
   "dependencies": {
     "@ant-design/colors": "^6.0.0",
+    "less": "^4.0.0",
     "@ant-design/icons-vue": "^6.0.0",
     "@babel/runtime": "^7.10.5",
     "@emotion/css": "^11.10.0",
     "@simonwep/pickr": "~1.8.0",
     "@vue/shared": "^3.2.33",
     "@vueuse/core": "^8.2.6",
+    "axios": "^0.21.1",
     "ant-design-vue": "^3.2.5",
     "array-tree-filter": "^2.1.0",
     "dayjs": "^1.11.3",
@@ -149,7 +141,8 @@
     "swiper": "^8.3.1",
     "three": "^0.139.2",
     "vue-types": "^4.1.1",
-    "warning": "^4.0.0"
+    "warning": "^4.0.0",
+    "vue-router": "^4.0.0"
   },
   "vetur": {
     "tags": "vetur/tags.json",
