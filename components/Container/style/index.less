@@ -1,0 +1,31 @@
+.vc-container {
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.vc-container-width {
+  transform-origin: left top;
+}
+
+.vc-container-height {
+  transform-origin: center top;
+}
+
+.vc-container-two-way {
+  transform-origin: left top;
+}
+
+.vc-container-auto {
+  transform-origin: left top;
+}
+
+.vc-container-scroll {
+  overflow: scroll;
+
+  > div {
+    position: relative;
+  }
+}

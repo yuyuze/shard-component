@@ -1,0 +1,8 @@
+node_modules
+release/*
+packages/shard/site/src/router/demoRoutes.js
+packages/shard/site/src/router/temRoutes.js
+*.log
+.history/
+packages/.env.development
+.vscode

@@ -1,0 +1,31 @@
+.motion {
+  transition: all 0.3s;
+}
+
+.item {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 16px;
+  overflow: hidden;
+  line-height: 31px;
+
+  &:hover {
+    background: rgba(255, 0, 0, 0.1);
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid gray;
+    content: '';
+  }
+
+  button {
+    margin-right: 8px;
+    vertical-align: text-top;
+  }
+}

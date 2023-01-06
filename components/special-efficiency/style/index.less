@@ -1,0 +1,134 @@
+@import '../../../style/themes/index';
+@import '../../../style/mixins/index';
+@import 'lightBlink';
+
+@prefix-cls: ~'@{vc-prefix}-special__drain-box';
+
+.@{prefix-cls} {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .drain-inner {
+    position: absolute;
+    z-index: 20;
+    width: calc(100% - var(--border-width) * 2);
+    height: calc(100% - var(--border-width) * 2);
+    background-color: #fff;
+  }
+
+  .drain-line {
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height:var(--border-width);
+      background-color: #000;
+      animation: run1 var(--time) linear infinite forwards;
+    }
+
+    &:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width:var(--border-width);
+      height: 100%;
+      background-color: #000;
+      animation: run2 var(--time) linear infinite forwards;
+      animation-delay: calc(var(--time) / 4);
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      height:var(--border-width);
+      background-color: #000;
+      animation: run3 var(--time) linear infinite forwards;
+      animation-delay: calc(var(--time) / 4  * 2);
+    }
+
+    &:nth-child(4) {
+      top: 100%;
+      left: 0%;
+      width: var(--border-width);
+      height: 100%;
+      background-color: #000;
+      animation: run4 var(--time) linear infinite forwards;
+      animation-delay: calc(var(--time) / 4 * 3);
+    }
+  }
+}
+
+@keyframes run1 {
+  0% {
+    top: 0;
+    left: -100%;
+  }
+
+  25% {
+    top: 0;
+    left: 100%;
+  }
+
+  100% {
+    top: 0;
+    left: 100%;
+  }
+}
+
+@keyframes run2 {
+  0% {
+    top: -100%;
+    right: 0;
+  }
+
+  25% {
+    top: 100%;
+    right: 0;
+  }
+
+  100% {
+    top: 100%;
+    right: 0;
+  }
+}
+
+@keyframes run3 {
+  0% {
+    bottom: 0;
+    left: 100%;
+  }
+
+  25% {
+    bottom: 0;
+    left: -100%;
+  }
+
+  100% {
+    bottom: 0;
+    left: -100%;
+  }
+}
+
+@keyframes run4 {
+  0% {
+    top: 100%;
+    left: 0%;
+  }
+
+  25% {
+    top: -100%;
+    left: 0%;
+  }
+
+  100% {
+    top: -100%;
+    left: 0%;
+  }
+}

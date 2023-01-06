@@ -1,0 +1,236 @@
+@import '../../style/index.less';
+
+@prefix-szjc1: ~'@{prefix-cls}-szjc1';
+@prefix-szjc2: ~'@{prefix-cls}-szjc2';
+@prefix-szjc3: ~'@{prefix-cls}-szjc3';
+@prefix-szjc4: ~'@{prefix-cls}-szjc4';
+@prefix-szjc5: ~'@{prefix-cls}-szjc5';
+@prefix-szjc6: ~'@{prefix-cls}-szjc6';
+@prefix-szjc7: ~'@{prefix-cls}-szjc7';
+
+.@{prefix-szjc1}-longcontainerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 44px;
+  color: #fff;
+  background-image: url('../img/szjc1-long.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.@{prefix-szjc1}-numText {
+  font-family: PangMenZhengDao;
+}
+
+.@{prefix-szjc1}-top_space {
+  width: 90px;
+  margin-top: 2px;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.@{prefix-szjc2}-compare {
+  margin-left: 9px;
+  text-align: center;
+  background-size: auto 100%;
+  .@{prefix-szjc2}-compare_title {
+    height: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 12px;
+    font-family: PingFang-SC-Regular;
+    line-height: 20px;
+  }
+  .@{prefix-szjc2}-compare_number {
+    align-self: center;
+    color: #42ffc3;
+    font-size: 14px;
+    font-family: PingFang-SC-Bold;
+  }
+}
+.@{prefix-szjc2}-compare_add {
+  background: url('../img/szjc2-add.png');
+  background-repeat: no-repeat;
+}
+.@{prefix-szjc2}-compare_sub {
+  background: url('../img/szjc2-sub.png');
+  background-repeat: no-repeat;
+}
+
+.@{prefix-szjc3}-kpi_box {
+  position: relative;
+  // display: flex;
+  flex: 0 0 auto;
+  // width: 67px;
+  // height: 84px;
+  background: url('../img/szjc3-icon-bottom.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // align-items: center;
+  cursor: pointer;
+  .@{prefix-szjc3}-top,
+  .@{prefix-szjc3}-bottom {
+    text-align: center;
+  }
+
+  .@{prefix-szjc3}-text {
+    position: relative;
+    font-family: AliHYAiHei;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+
+  .@{prefix-szjc3}-num {
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: Din;
+  }
+
+  .@{prefix-szjc3}-bg {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background-size: auto 100%;
+  }
+}
+
+.@{prefix-szjc4}-container {
+  position: relative;
+  width: 113px;
+  height: 100px;
+  background: url('../img/szjc4-big.png');
+}
+.@{prefix-szjc4}-percent {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  left: 0;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: Din;
+}
+.@{prefix-szjc4}-title {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  color: white;
+  font-size: 12px;
+  font-family: PingFang-SC-Regular;
+  letter-spacing: 3px;
+}
+
+.@{prefix-szjc5}-container {
+  position: relative;
+  width: 113px;
+  height: 45px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  background: url('../img/szjc5-small.png');
+}
+.@{prefix-szjc5}-percent {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  left: 0;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: Din;
+}
+.@{prefix-szjc5}-title {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  left: 0;
+  color: white;
+  font-size: 12px;
+  font-family: PingFang-SC-Regular;
+  letter-spacing: 2px;
+}
+
+.@{prefix-szjc6}-maodun {
+  position: relative;
+  width: 60px;
+  height: 123px;
+  background: url('../img/szjc6-maodun.png');
+  background-size: 100% 100%;
+  user-select: none;
+}
+.@{prefix-szjc6}-maodun_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // background: url('../img/szjc6-maodun.png') no-repeat center;
+}
+.@{prefix-szjc6}-number {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 15.66px;
+  font-family: PangMenZhengDao;
+  text-align: center;
+  background: linear-gradient(to bottom, #70fffa, #0064f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.@{prefix-szjc6}-title{
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  width: 50px;
+  color: white;
+  font-size: 11.74px;
+  font-family: PingFang-SC-Regular;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.@{prefix-szjc7}-container {
+  position: relative;
+  width: 67px;
+  height: 84px;
+  background: url('../img/szjc7-ducha.png');
+}
+.@{prefix-szjc7}-percent {
+  position: absolute;
+  top: 12px;
+  justify-content: center;
+  width: 100%;
+  font-size: 15.66px;
+  font-family: PangMenZhengDao;
+  /* stylelint-disable-next-line length-zero-no-unit */
+  text-shadow: 0px 10px 10px rgba(1, 24, 33, 0.7);
+}
+.@{prefix-szjc7}-name_box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.@{prefix-szjc7}-line_1{
+  // position: absolute;
+  bottom: 10px;
+  width: 40px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: PingFang-SC-Regular;
+  line-height: 17px;
+  letter-spacing: 1px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  text-align: center;
+}
+// .@{prefix-szjc6}-line_1 {
+// }
+
+
+

@@ -1,0 +1,63 @@
+@import '../../../style/themes/index';
+@import '../../../style/mixins/index';
+
+// 100 / 4 2
+@prefix-cls: ~'@{vc-prefix}-special__light-blink';
+
+
+
+// .loop(@i, @num, @index) when (@i <= @num) {
+//   .loop((@i + 1), @num, @index);    // 递归调用自身
+//   @process: ((100 / @num) * (@i - 1)) * 1%;
+//   @{process}{
+//      background-color: if((@index < @i), var(--active-color), var(--default-color));
+//     }
+//  }
+
+// .keyframesFunction (@name, @num, @index) {
+//   @keyframes @name {
+//     .loop(1, @num, @index);
+//     100% {
+//       background-color: var(--active-color);
+//     }
+//   }
+// }
+// .keyframesFunction(LightBlink, 4, 1);
+.@{vc-prefix}-special {
+  display: inline-block;
+}
+
+.@{prefix-cls}{
+  display: inline-flex;
+  flex-direction: var(--direction);
+}
+.@{prefix-cls} div[class*=-special__light-blink--] {
+  width: 100%;
+  height: 100%;
+}
+
+.@{prefix-cls}--element {
+  // .keyframesFunction(LightBlink, 4, 3);
+  .@{prefix-cls}--rect {
+    background: var(--default-color);
+    transition: all var(--duration);
+  }
+  .@{prefix-cls}--parallelogram {
+    background: var(--default-color);
+    transform-origin: center center;
+    transition: all var(--duration);
+  }
+
+  .@{prefix-cls}--circle {
+    background: var(--default-color);
+    border-radius: 50%;
+    transform-origin: center center;
+    transition: all var(--duration);
+  }
+
+  .@{prefix-cls}--svg {
+    transform-origin: center center;
+    transition: all var(--duration);
+    fill: var(--default-color);
+  }
+}

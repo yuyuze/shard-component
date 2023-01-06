@@ -1,0 +1,91 @@
+.vc-progress {
+  width: 100%;
+}
+@keyframes autowidth {
+  0% {
+    width: 0;
+  }
+}
+@keyframes background-position {
+  0% {
+    background-position: 0 center;
+  }
+
+  100% {
+    background-position: 140px center;
+  }
+}
+
+.vc-progress-item {
+  display: flex;
+  align-items: center;
+
+  .vc-progress-item-name {
+    width: 15%;
+    overflow: hidden;
+    color: #000;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    // text-align-last: justify;
+  }
+
+  .vc-progress-item-line {
+    position: relative;
+    width: var(--linewidth);
+    height: var(--strokeWidth);
+    margin-right: 10px;
+    margin-left: 10px;
+    background: var(--bgColor);
+    border-radius: var(--radius);
+
+    .vc-progress-item-line-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--width);
+      height: 100%;
+      background: var(--lineColor);
+      border-radius: inherit;
+      cursor: pointer;
+      animation: autowidth linear 1.5s;
+    }
+  }
+
+  .vc-progress-item-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: var(--strokeWidth);
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    background: var(--bgColor);
+
+    div {
+      width: 10px;
+      height: 7px;
+      margin: 0 2px;
+    }
+  }
+
+  .vc-progress-item-value {
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+    // opacity: 0;
+    // transition: all 0.3s;
+    // transform: translateY(100%);
+  }
+
+  .vc-progress-item-line:hover .vc-progress-item-value {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}

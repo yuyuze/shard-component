@@ -1,0 +1,94 @@
+@import '../../../style/themes/index';
+@import '../../../style/mixins/index';
+
+// 100 / 4 2
+@prefix-cls: ~'@{vc-prefix}-special__neon-light';
+
+.@{prefix-cls} {
+  position: relative;
+  box-sizing: border-box;
+  // background-image: url('../../../../szjc/src/views/home/src/Common/img/mark.png');
+  background-blend-mode: multiply;
+  box-shadow: 0 1px var(--expand-width) var(--color);
+}
+
+.@{prefix-cls}-inset {
+  position: relative;
+  box-sizing: border-box;
+  // background-image: url('../../../../szjc/src/views/home/src/Common/img/mark.png');
+  background-blend-mode: multiply;
+  box-shadow:inset 0 1px var(--expand-width) var(--color);
+
+ 
+  
+}
+
+.@{prefix-cls}-animation {
+  -webkit-animation-name:breathe;
+  -webkit-animation-duration: var(--time);
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+}
+
+.@{prefix-cls}-inset-animation {
+  -webkit-animation-name: breatheInset;
+  -webkit-animation-duration: var(--time);
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+}
+
+@keyframes breatheInset {
+  0% {
+    box-shadow:inset 0 1px 2px var(--init-color);
+  }
+
+  100% {
+    // border:1px solid var(--color);
+    box-shadow:inset 0 1px var(--expand-width) var(--color);
+  }
+}
+@keyframes breathe {
+  0% {
+    box-shadow: 0 1px 2px var(--init-color);
+  }
+
+  100% {
+    // border:1px solid var(--color);
+    box-shadow: 0 1px var(--expand-width) var(--color);
+  }
+}
+
+@keyframes breathe-svg {
+  0% {
+    filter:drop-shadow(0 1px 2px var(--init-color));
+  }
+
+  100% {
+    // border:1px solid var(--color);
+    filter:drop-shadow(0 1px var(--expand-width) var(--color));
+  }
+}
+
+.path {
+  -webkit-svg-shadow:  0 0 7px #53BE12;
+
+}
+
+.@{vc-prefix}-special__neon-icon {
+  position: absolute;
+  z-index: 1;
+}
+
+.@{vc-prefix}-special__neon-icon--shadow {
+  filter:drop-shadow(0 1px var(--expand-width) var(--color));
+}
+
+.@{vc-prefix}-special__neon-icon--shadow-animation {
+  -webkit-animation-name:breathe-svg;
+  -webkit-animation-duration: var(--time);
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+}

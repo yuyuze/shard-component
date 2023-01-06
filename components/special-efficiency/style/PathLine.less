@@ -1,0 +1,42 @@
+@import '../../../style/themes/index';
+@import '../../../style/mixins/index';
+
+// 100 / 4 2
+@prefix-cls: ~'@{vc-prefix}__path-line';
+
+.@{prefix-cls} {
+
+}
+
+.g-rect-path {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dashoffset: var(--startStrokeDashoffset);
+}
+
+
+.g-rect-fill {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dashoffset: var(--startStrokeDashoffset);
+}
+
+.g-rect-fill--animation {
+  animation: lineMove var(--time) var(--animationTimingFunction) infinite;
+}
+
+.g-rect-fill--animation-reverse {
+  animation: lineMoveReverse var(--time) var(--animationTimingFunction) infinite;
+}
+
+@keyframes lineMove {
+  0% {
+    stroke-dashoffset: var(--startStrokeDashoffset);
+  }
+
+  100% {
+    stroke-dashoffset: var(--endStrokeDashoffset);
+  }
+}

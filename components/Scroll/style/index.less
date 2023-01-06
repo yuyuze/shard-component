@@ -1,0 +1,55 @@
+@import '../../../style/themes/index';
+@import '../../../style/mixins/index';
+
+@prefix-cls: ~'@{vc-prefix}-scroll';
+
+// .@{prefix-cls} {
+// }
+
+.@{prefix-cls}-defa {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #00bcd4;
+    border-radius: 2px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: #00bcd4;
+  }
+}
+
+.vc-virtual-list-holder {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #00bcd4;
+    border-radius: 2px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: #00bcd4;
+  }
+}
+
+.@{prefix-cls}-auto-infinity .vc-virtual-list-scrollbar {
+  opacity: 0;
+}

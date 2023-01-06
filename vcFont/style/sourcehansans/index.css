@@ -1,0 +1,49 @@
+@font-face {
+  font-weight: normal;
+  font-family: SOURCEHANSANS-BOLD;
+  font-style: normal;
+  src: url("../../font/SOURCEHANSANS/SOURCEHANSANS-BOLD.OTF");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: SOURCEHANSANS-EXTRALIGHT;
+  font-style: normal;
+  src: url("../../font/SOURCEHANSANS/SOURCEHANSANS-EXTRALIGHT.OTF");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: SOURCEHANSANS-HEAVY;
+  font-style: normal;
+  src: url("../../font/SOURCEHANSANS/SOURCEHANSANS-HEAVY.OTF");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: SOURCEHANSANS-LIGHT;
+  font-style: normal;
+  src: url("../../font/SOURCEHANSANS/SOURCEHANSANS-LIGHT.OTF");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: SOURCEHANSANS-MEDIUM;
+  font-style: normal;
+  src: url("../../font/SOURCEHANSANS/SOURCEHANSANS-MEDIUM.OTF");
+}
+
+
+@font-face {
+  font-weight: normal;
+  font-family: SOURCEHANSANS-NORMAL;
+  font-style: normal;
+  src: url("../../font/SOURCEHANSANS/SOURCEHANSANS-NORMAL.OTF");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: SOURCEHANSANS-REGULAR;
+  font-style: normal;
+  src: url("../../font/SOURCEHANSANS/SOURCEHANSANS-REGULAR.OTF");
+}
